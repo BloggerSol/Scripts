@@ -92,7 +92,6 @@
     letter-spacing: 2.5px;
     font-weight: 500;
     color: #fff; /* Changed text color to white */
-    background-color: #008CBA; /* Blue, same as .blue from base styles */
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
