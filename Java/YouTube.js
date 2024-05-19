@@ -1,4 +1,3 @@
-    <script>
         (function() {
             var allowedDomain = "bloggingforge.blogspot.com"; // Apne domain ka naam yahan likhein
             var redirectURL = "https://www.gtamodplace.com/"; // Redirect URL yahan likhein
