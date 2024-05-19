@@ -109,31 +109,31 @@
 }
 
 /* Slide-Up Buttons with Colors */
-.slide.blue {
+.blue {
     background-color: #008CBA; /* Blue */
 }
 
-.slide.green {
+.green {
     background-color: #4CAF50; /* Green */
 }
 
-.slide.black {
+.black {
     background-color: #555555; /* Black */
 }
 
-.slide.red {
+.red {
     background-color: #f44336; /* Red */
 }
 
-.slide.orange {
+.orange {
     background-color: #FF9933; /* Orange */
 }
 
-.slide.crimson {
+.crimson {
     background-color: #DC143C; /* Crimson */
 }
 
-.slide.hp {
+.hp {
     background-color: #FF69B4; /* HotPink */
 }
 
@@ -141,30 +141,30 @@
     background-color: #FF1493; /* DeepPink */
 }
 
-.slide.mvr {
+.mvr {
     background-color: #C71585; /* MediumVioletRed */
 }
 
-.slide.coral {
+.coral {
     background-color: #FF7F50; /* Coral */
 }
 
-.slide.tomato {
+.tomato {
     background-color: #FF6347; /* Tomato */
 }
 
-.slide.dko {
+.dko {
     background-color: #FF8C00; /* DarkOrange */
 }
 
-.slide.violet {
+.violet {
     background-color: #EE82EE; /* Violet */
 }
 
-.slide.purple {
+.purple {
     background-color: #663399; /* Purple */
 }
 
-.slide.dsg {
+.dsg {
     background-color: #8FBC8B; /* DarkSeaGreen */
 }
