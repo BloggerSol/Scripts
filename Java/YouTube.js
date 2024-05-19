@@ -1,4 +1,13 @@
-  function get() {
+const allowedDomains = ["bloggingforge.blogspot.com", "www.bloggersol.com"];
+const currentDomain = window.location.hostname;
+
+if (!allowedDomains.includes(currentDomain)) {
+    // Domain mismatch, show popup or take action
+    alert("Unauthorized use detected!");
+    // You can replace alert with more sophisticated popup/modal
+}
+
+function get() {
     const url = document.getElementById('Url').value;
     if (!url) {
       displayError('Please enter a YouTube URL.');
