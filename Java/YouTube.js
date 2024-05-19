@@ -2,34 +2,12 @@ function activateDomain() {
     const allowedDomains = ["bloggingforge.blogspot.com", "www.bloggersol.com"];
     const currentDomain = window.location.hostname;
 
-    const div = document.getElementById("activate");
-    const encodedCode = div.getAttribute("license");
-
-    if (encodedCode) {
-        const decodedCode = atob(encodedCode);
-
-        // Check if the decoded code starts with "http://" or "https://" to avoid potential security risks
-        if (decodedCode.startsWith("http://") || decodedCode.startsWith("https://")) {
-            // Check if the current domain is allowed
-            if (allowedDomains.includes(currentDomain)) {
-                div.setAttribute("license", decodedCode);
-            } else {
-                alert("Unauthorized use detected!");
-                // You can replace this alert with any other action you prefer
-            }
-        } else {
-            alert("Invalid license code detected!");
-            // You can replace this alert with any other action you prefer
-        }
-    } else {
-        alert("No license code found!");
-        // You can replace this alert with any other action you prefer
+    if (!allowedDomains.includes(currentDomain)) {
+        alert("Unauthorized use detected!");
     }
 }
 
-// activateDomain function ko page load par ya jahan bhi aapko zarurat ho wahaan call karein
-activateDomain();
-function get() {
+  function get() {
     const url = document.getElementById('Url').value;
     if (!url) {
       displayError('Please enter a YouTube URL.');
