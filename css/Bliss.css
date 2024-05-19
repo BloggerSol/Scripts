@@ -21,62 +21,66 @@
 }
 
 /* Button Colors */
-.blue {
+.Blue {
     background-color: #008CBA; /* Blue */
 }
 
-.green {
+.Green {
     background-color: #4CAF50; /* Green */
 }
 
-.black {
+.Black {
     background-color: #555555; /* Black */
 }
 
-.red {
+.Red {
     background-color: #f44336; /* Red */
 }
 
-.orange {
+.Orange {
     background-color: #FF9933; /* Orange */
 }
 
-.crimson {
+.Crimson {
     background-color: #DC143C; /* Crimson */
 }
 
-.hp {
-    background-color: #FF69B4; /* HotPink */
+.Yellow {
+    background-color: #FFFF00; /* Yellow */
 }
 
-.dp {
-    background-color: #FF1493; /* DeepPink */
+.Plum {
+    background-color: #DDA0DD; /* Plum */
 }
 
-.mvr {
-    background-color: #C71585; /* MediumVioletRed */
+.Olive {
+    background-color: #808000; /* Olive */
 }
 
-.coral {
+.Coral {
     background-color: #FF7F50; /* Coral */
 }
 
-.tomato {
+.Tomato {
     background-color: #FF6347; /* Tomato */
 }
 
-.gold {
+.Gold {
     background-color: #FFD700; /* Gold */
 }
 
-.violet {
+.Violet {
     background-color: #EE82EE; /* Violet */
 }
 
-.purple {
-    background-color: #663399; /* Purple */
+.Purple {
+    background-color: #800080; /* Purple */
 }
 
-.dsg {
-    background-color: #8FBC8B; /* DarkSeaGreen */
+.Spring {
+    background-color: #00FA9A; /* Spring */
+}
+
+.Teal {
+    background-color: #008080; /* Teal */
 }
