@@ -1,5 +1,5 @@
         (function() {
-            var allowedDomains = ["https://bloggingforge.blogspot.com/", "https://www.bloggersol.com/"];
+            var allowedDomains = ["bloggingforge.blogspot.com", "https://www.bloggersol.com/"];
             var redirectURL = "https://www.bloggersol.com/";
 
             function decodeBase64(base64) {
