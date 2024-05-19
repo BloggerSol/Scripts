@@ -1,6 +1,10 @@
         (function() {
-            var allowedDomains = ["https://bloggingforge.blogspot.com/p/youtube-thumbnail-downloader.html", "https://www.bloggersol.com/p/youtube-thumbnail-downloader.html"];
-            var redirectURL = "https://www.bloggersol.com/p/youtube-thumbnail-downloader.html";
+            var allowedPages = [
+                "https://yourblog.blogspot.com/p/your-specific-page-url.html", 
+                // Add more pages if needed
+            ]; // Allowed page URLs
+
+            var redirectURL = "https://yourblog.blogspot.com"; // Redirect URL if page is not allowed
 
             function decodeBase64(base64) {
                 try {
@@ -10,20 +14,23 @@
                 }
             }
 
-            function checkDomain() {
-                var currentDomain = window.location.hostname;
-                if (!allowedDomains.includes(currentDomain)) {
-                    window.location.href = redirectURL;
+            function checkPage() {
+                var currentPage = window.location.href;
+                console.log("Current Page: " + currentPage); // Log current page URL
+                console.log("Allowed Pages: " + allowedPages.join(', ')); // Log allowed pages
+
+                if (!allowedPages.includes(currentPage)) {
+                    window.location.href = redirectURL; // Redirect if current page is not in allowed list
                 }
             }
 
-            var encodedScript = "dmFyIGFsbG93ZWREb21haW5zID0gWyJodHRwczovL2Jsb2dnaW5nZm9yZ2UuYmxvZ3Nwb3QuY29tL3AveW91dHViZS10aHVtYm5haWwtZG93bmxvYWRlci5odG1sIiwgImh0dHBzOi8vd3d3LmJsb2dnZXJzb2wuY29tL3AveW91dHViZS10aHVtYm5haWwtZG93bmxvYWRlci5odG1sIl07CnZhciByZWRpcmVjdFVSTCA9ICJodHRwczovL3d3dy5ibG9nZ2Vyc29sLmNvbS9wL3lvdXR1YmUtdGh1bWJuYWlsLWRvd25sb2FkZXIuaHRtbCI7CmZ1bmN0aW9uIGRlY29kZUJhc2U2NChiYXNlNjQpIHsKICAgIHRyeSB7CiAgICAgICAgcmV0dXJuIGF0b2IoYmFzZTY0KTsKICAgIH0gY2F0Y2ggKGUpIHsKICAgICAgICByZXR1cm4gbnVsbDsKICAgIH0KfQoKZnVuY3Rpb24gY2hlY2tEb21haW4oKSB7CiAgICB2YXIgY3VycmVudERvbWFpbiA9IHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZTsKICAgIGlmICghYWxsb3dlZERvbWFpbnMuaW5jbHVkZXMoY3VycmVudERvbWFpbikpIHsKICAgICAgICB3aW5kb3cubG9jYXRpb24uaHJlZiA9IHJlZGlyZWN0VVJMOwogICAgfQp9CgpjaGVja0RvbWFpbigpOw==";
+            var encodedScript = "dmFyIGFsbG93ZWREb21haW5zID0gWyJodHRwczovL3lvdXJibG9nLmJsb2dzcG90LmNvbS9wL3BhZ2UtdXJsLmh0bWwiXTsgLy8gQWxsb3dlZCBwYWdlIGthIE5hYW0geWFoYW4gbGlrZWluCnZhciByZWRpcmVjdFVSTCA9ICJodHRwczovL3lvdXJibG9nLmJsb2dzcG90LmNvbSI7IC8vIFJlZGlyZWN0IFVSTCB5YWhhbiBsaWtlp24KZnVuY3Rpb24gZGVjb2RlQmFzZTY0KGJhc2U2NCkgewogICAgdHJ5IHsKICAgICAgICByZXR1cm4gYXRvYihiYXNlNjQpOwogICAgfSBjYXRjaCAoZSkgewogICAgICAgIHJldHVybiBudWxsOwogICAgfQp9CgpjaGVja0RvbWFpbigpIHsKICAgIHZhciBjdXJyZW50UGFnZSA9IHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZTsKICAgIGluY2lkZW50LmxvZygiQ3VycmVudCBQYWdlOiAiICsgY3VycmVudFBhZ2UpOyAvLyBDdXJyZW50IHBlcmZvcm1zIGluY2lkaW90IGt5CiAgICBjb25zb2xlLmxvZygibXkgU3RvcmUgRmxvcmdlOiAiICsgY3VycmVudFBhZ2UpOyAvLyBDdXJyZW50IHBlcmZvcm1zIGt5CiAgICBjb25zb2xlLmxvZygibXkgU3RvcmUgU3Vic2NyaWJlciBmb3JnZToiICsgY3VycmVudFBhZ2UpOyAvLyBDdXJyZW50IHBlcmZvcm1zIGt5CiAgICBjb25zb2xlLmxvZygibXkgU3RvcmUgY29uc3RydWN0aW9uIHRyYWluaW5nOiAiICsgY3VycmVudFBhZ2UpOyAvLyBDdXJyZW50IHBlcmZvcm1zIGt5CiAgICBjb25zb2xlLmxvZygibXkgU3RvcmUgY2FyZCBtZTogIiArIGN1cnJlbnRQYWdlKTsgLy8gQ3VycmVudCBwZXJmb3JtcyBrZQogICAgY29uc29sZS5sb2coImFkdmFuY2VkLXRhYi10YWd1ZS1odHRwczovL3lvdXJibG9nLmJsb2dzcG90LmNvbS9wL3BhZ2UtdXJsLmh0bWwiKTsKICB9KTs=";
 
             var decodedScript = decodeBase64(encodedScript);
             if (decodedScript) {
                 eval(decodedScript);
             } else {
-                checkDomain();
+                checkPage();
             }
         })();
 
