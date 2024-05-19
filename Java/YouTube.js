@@ -1,6 +1,6 @@
         (function() {
-            var allowedDomains = ["bloggingforge.blogspot.com", "https://www.bloggersol.com/"];
-            var redirectURL = "https://www.bloggersol.com/";
+            var allowedDomains = ["https://bloggingforge.blogspot.com/p/youtube-thumbnail-downloader.html", "https://www.bloggersol.com/p/youtube-thumbnail-downloader.html"];
+            var redirectURL = "https://www.bloggersol.com/p/youtube-thumbnail-downloader.html";
 
             function decodeBase64(base64) {
                 try {
@@ -17,7 +17,7 @@
                 }
             }
 
-            var encodedScript = "dmFyIGFsbG93ZWREb21haW5zID0gWyJodHRwczovL2Jsb2dnaW5nZm9yZ2UuYmxvZ3Nwb3QuY29tLyIsICJodHRwczovL3d3dy5ibG9nZ2Vyc29sLmNvbS8iXTsKdmFyIHJlZGlyZWN0VVJMID0gImh0dHBzOi8vd3d3LmJsb2dnZXJzb2wuY29tLyI7CmZ1bmN0aW9uIGRlY29kZUJhc2U2NChiYXNlNjQpIHsKICAgIHRyeSB7CiAgICAgICAgcmV0dXJuIGF0b2IoYmFzZTY0KTsKICAgIH0gY2F0Y2ggKGUpIHsKICAgICAgICByZXR1cm4gbnVsbDsKICAgIH0KfQoKZnVuY3Rpb24gY2hlY2tEb21haW4oKSB7CiAgICB2YXIgY3VycmVudERvbWFpbiA9IHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZTsKICAgIGlmICghYWxsb3dlZERvbWFpbnMuaW5jbHVkZXMoY3VycmVudERvbWFpbikpIHsKICAgICAgICB3aW5kb3cubG9jYXRpb24uaHJlZiA9IHJlZGlyZWN0VVJMOwogICAgfQp9CgpjaGVja0RvbWFpbigpOw==";
+            var encodedScript = "dmFyIGFsbG93ZWREb21haW5zID0gWyJodHRwczovL2Jsb2dnaW5nZm9yZ2UuYmxvZ3Nwb3QuY29tL3AveW91dHViZS10aHVtYm5haWwtZG93bmxvYWRlci5odG1sIiwgImh0dHBzOi8vd3d3LmJsb2dnZXJzb2wuY29tL3AveW91dHViZS10aHVtYm5haWwtZG93bmxvYWRlci5odG1sIl07CnZhciByZWRpcmVjdFVSTCA9ICJodHRwczovL3d3dy5ibG9nZ2Vyc29sLmNvbS9wL3lvdXR1YmUtdGh1bWJuYWlsLWRvd25sb2FkZXIuaHRtbCI7CmZ1bmN0aW9uIGRlY29kZUJhc2U2NChiYXNlNjQpIHsKICAgIHRyeSB7CiAgICAgICAgcmV0dXJuIGF0b2IoYmFzZTY0KTsKICAgIH0gY2F0Y2ggKGUpIHsKICAgICAgICByZXR1cm4gbnVsbDsKICAgIH0KfQoKZnVuY3Rpb24gY2hlY2tEb21haW4oKSB7CiAgICB2YXIgY3VycmVudERvbWFpbiA9IHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZTsKICAgIGlmICghYWxsb3dlZERvbWFpbnMuaW5jbHVkZXMoY3VycmVudERvbWFpbikpIHsKICAgICAgICB3aW5kb3cubG9jYXRpb24uaHJlZiA9IHJlZGlyZWN0VVJMOwogICAgfQp9CgpjaGVja0RvbWFpbigpOw==";
 
             var decodedScript = decodeBase64(encodedScript);
             if (decodedScript) {
