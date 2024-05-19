@@ -2,23 +2,28 @@ function activateDomain() {
     const allowedDomains = ["bloggingforge.blogspot.com", "www.bloggersol.com"];
     const currentDomain = window.location.hostname;
 
-    if (allowedDomains.includes(currentDomain)) {
-        let base64Code = ""; // Base64 encoded code yahan set karenge
+    const div = document.getElementById("activate");
+    const encodedCode = div.getAttribute("license");
 
-        if (currentDomain === "bloggingforge.blogspot.com") {
-            base64Code = "YmxvZ2dpbmdmb3JnZS5ibG9nc3BvdC5jb20="; // Blogspot domain ke liye code
-        } else if (currentDomain === "www.bloggersol.com") {
-            base64Code = "d3d3LmJsb2dnZXJzb2wuY29t"; // Bloggersol domain ke liye code
+    if (encodedCode) {
+        const decodedCode = atob(encodedCode);
+
+        // Check if the decoded code starts with "http://" or "https://" to avoid potential security risks
+        if (decodedCode.startsWith("http://") || decodedCode.startsWith("https://")) {
+            // Check if the current domain is allowed
+            if (allowedDomains.includes(currentDomain)) {
+                div.setAttribute("license", decodedCode);
+            } else {
+                alert("Unauthorized use detected!");
+                // You can replace this alert with any other action you prefer
+            }
+        } else {
+            alert("Invalid license code detected!");
+            // You can replace this alert with any other action you prefer
         }
-
-        // Base64 code ko decode karein aur div ke attribute 'license' mein set karein
-        const decodedCode = atob(base64Code);
-        const div = document.getElementById("activate");
-        div.setAttribute("license", decodedCode);
     } else {
-        // Domain mismatch, show popup or take action
-        alert("Unauthorized use detected!");
-        // Aap alert ko kisi aur popup ya action se replace kar sakte hain
+        alert("No license code found!");
+        // You can replace this alert with any other action you prefer
     }
 }
 
