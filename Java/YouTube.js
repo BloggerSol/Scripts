@@ -1,12 +1,3 @@
-function activateDomain() {
-    const allowedDomains = ["bloggingforge.blogspot.com", "www.bloggersol.com"];
-    const currentDomain = window.location.hostname;
-
-    if (!allowedDomains.includes(currentDomain)) {
-        alert("Unauthorized use detected!");
-    }
-}
-
   function get() {
     const url = document.getElementById('Url').value;
     if (!url) {
