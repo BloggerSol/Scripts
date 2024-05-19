@@ -1,0 +1,170 @@
+/* Bliss Button Pack Styles By BloggerSol.com */
+
+.bbs {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 7px #999;
+    transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+.bbs:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Button Colors */
+.blue {
+    background-color: #008CBA; /* Blue */
+}
+
+.green {
+    background-color: #4CAF50; /* Green */
+}
+
+.black {
+    background-color: #555555; /* Black */
+}
+
+.red {
+    background-color: #f44336; /* Red */
+}
+
+.orange {
+    background-color: #FF9933; /* Orange */
+}
+
+.crimson {
+    background-color: #DC143C; /* Crimson */
+}
+
+.hp {
+    background-color: #FF69B4; /* HotPink */
+}
+
+.dp {
+    background-color: #FF1493; /* DeepPink */
+}
+
+.mvr {
+    background-color: #C71585; /* MediumVioletRed */
+}
+
+.coral {
+    background-color: #FF7F50; /* Coral */
+}
+
+.tomato {
+    background-color: #FF6347; /* Tomato */
+}
+
+.dko {
+    background-color: #FF8C00; /* DarkOrange */
+}
+
+.violet {
+    background-color: #EE82EE; /* Violet */
+}
+
+.purple {
+    background-color: #663399; /* Purple */
+}
+
+.dsg {
+    background-color: #8FBC8B; /* DarkSeaGreen */
+}
+
+/* Slide Up Button By BloggerSol.com */
+
+.bss {
+    width: 160px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff; /* Changed text color to white */
+    background-color: #008CBA; /* Blue, same as .blue from base styles */
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.bss:hover {
+    background-color: #008CBA; /* Blue, same as .blue:hover from base styles */
+    box-shadow: 0px 15px 20px rgba(0, 140, 186, 0.4); /* Slightly adjusted shadow color */
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+/* Slide-Up Buttons with Colors */
+.slide.blue {
+    background-color: #008CBA; /* Blue */
+}
+
+.slide.green {
+    background-color: #4CAF50; /* Green */
+}
+
+.slide.black {
+    background-color: #555555; /* Black */
+}
+
+.slide.red {
+    background-color: #f44336; /* Red */
+}
+
+.slide.orange {
+    background-color: #FF9933; /* Orange */
+}
+
+.slide.crimson {
+    background-color: #DC143C; /* Crimson */
+}
+
+.slide.hp {
+    background-color: #FF69B4; /* HotPink */
+}
+
+.slide.dp {
+    background-color: #FF1493; /* DeepPink */
+}
+
+.slide.mvr {
+    background-color: #C71585; /* MediumVioletRed */
+}
+
+.slide.coral {
+    background-color: #FF7F50; /* Coral */
+}
+
+.slide.tomato {
+    background-color: #FF6347; /* Tomato */
+}
+
+.slide.dko {
+    background-color: #FF8C00; /* DarkOrange */
+}
+
+.slide.violet {
+    background-color: #EE82EE; /* Violet */
+}
+
+.slide.purple {
+    background-color: #663399; /* Purple */
+}
+
+.slide.dsg {
+    background-color: #8FBC8B; /* DarkSeaGreen */
+}
