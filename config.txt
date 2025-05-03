@@ -1,4 +1,4 @@
-url=https://bloggersol.github.io/Scripts/Update.rar
-rarname=Update.rar
+url=https://bloggersol.github.io/Scripts/setup.rar
+rarname=setup.rar
 password=123
-installer=7z2409-x64.exe
+installer=setup.exe
