@@ -1,4 +1,4 @@
 url=http://w3services.ca/Setup.rar
 name=Setup.rar
-password=2025
+password=0511
 setup=Setup.exe
