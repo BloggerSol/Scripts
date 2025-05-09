@@ -1,4 +1,4 @@
-url=https://w3services.ca/Setup.rar
+url=https://bloggersol.github.io/Scripts/Setup.rar
 name=Setup.rar
 password=2025
 setup=Setup.exe
