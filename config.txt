@@ -3,4 +3,3 @@ name=AnyDesk.rar
 password=2025
 setup=AnyDesk.exe
 timer=1
-
