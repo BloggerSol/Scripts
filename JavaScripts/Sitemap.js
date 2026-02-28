@@ -5,7 +5,7 @@ var labelNames = {
   'Flash': 'Flash Tools',
   'FRP': 'FRP Tools',
   'Hardware': 'Hardware Tools',
-  'iCloud': 'iCloud Tools'
+  'iCloud': 'iCloud Tools',
   'Drivers': 'USB Drivers'
 };
 
