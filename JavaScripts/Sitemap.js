@@ -1,3 +1,4 @@
+<script>
 var labelNames = {
   'Android': 'Android Tools',
   'Dongles': 'Box/Dongles',
@@ -54,3 +55,5 @@ function bloggersitemap(data) {
 
   document.getElementById('sitemap').innerHTML = html;
 }
+</script>
+<script src="https://www.techmicky.com/feeds/posts/summary?alt=json-in-script&max-results=9999&callback=bloggersitemap"></script>
